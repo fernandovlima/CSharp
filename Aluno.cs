@@ -3,6 +3,11 @@ namespace Aula_POO
 {
 	public class Aluno : Pessoa
 	{
+
+		public string Martricula
+		{
+			get; set;
+		}
     
         //construtor
 		public Aluno(){
@@ -20,7 +25,11 @@ namespace Aula_POO
 			CPF = cpf;
 		}
 
+		public override string ShowInfoPessoa()
+		{
+			return "Aluno: " + Nome + "\nCPF: " + CPF + "\nMatricula: " + Martricula;
 
+		}
 	}
 
 }
