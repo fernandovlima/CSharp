@@ -6,7 +6,13 @@ namespace Aula_POO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+			Aluno aluno = new Aluno();
+
+			aluno.Nome = "Fernando"; //set
+			aluno.CPF = "123456789090";
+			Console.WriteLine("Aluno: " + aluno.Nome + "\nCPF: " + aluno.CPF); 
+
+		
+		}
     }
 }
